@@ -4,9 +4,9 @@ Open Google Translate easily on your menubar!
 
 
 
-This use a `webkit view` to open `https://translate.google.cn/` .
+This uses a `webkit view` to open `https://translate.google.cn/` .
 
-I am in China, so it opens `.cn` instead of `.com` 
+I am in China, so it opens `.cn` website of Google Translate instead of `.com` .
 
 You can change to your favorite translation website if you want. 
 

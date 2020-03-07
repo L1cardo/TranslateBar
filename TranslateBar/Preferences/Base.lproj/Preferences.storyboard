@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="pWw-1M-ft8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="sON-Q1-IaR">
+            <objects>
+                <windowController id="pWw-1M-ft8" customClass="PreferencesWindowController" customModule="TranslateBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="eQY-F0-8zZ" userLabel="Preferences">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <connections>
+                            <outlet property="delegate" destination="pWw-1M-ft8" id="BPy-Fx-ek2"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="LYe-b4-hTm" kind="relationship" relationship="window.shadowedContentViewController" id="NrU-nz-PvI"/>
+                    </connections>
+                </windowController>
+                <customObject id="3Qg-B0-e6Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="49"/>
+        </scene>
+        <!--General-->
+        <scene sceneID="CfH-nN-oG3">
+            <objects>
+                <viewController title="General" id="7fW-mR-g9x" customClass="GeneralViewController" customModule="TranslateBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="f3A-JF-6Nj">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="110"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZU8-JP-iVZ">
+                                <rect key="frame" x="20" y="20" width="348" height="70"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QvD-UK-ly9">
+                                        <rect key="frame" x="-2" y="54" width="120" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Launch At Login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="eGh-Sv-wDE">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="didChangeloginServer:" target="7fW-mR-g9x" id="fmG-tA-ioC"/>
+                                        </connections>
+                                    </button>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLO-PS-6YO">
+                                        <rect key="frame" x="0.0" y="29" width="185" height="19"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FCk-my-W28">
+                                                <rect key="frame" x="-2" y="2" width="61" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="Shortcut:" id="0Di-yZ-w7R">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="hAi-xN-4ci" customClass="MASShortcutView">
+                                                <rect key="frame" x="65" y="0.0" width="120" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="GUn-0k-v79"/>
+                                                    <constraint firstAttribute="height" constant="19" id="brf-kO-LgJ"/>
+                                                </constraints>
+                                            </customView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FCk-my-W28" firstAttribute="centerY" secondItem="rLO-PS-6YO" secondAttribute="centerY" id="ki6-7f-Fip"/>
+                                            <constraint firstItem="hAi-xN-4ci" firstAttribute="centerY" secondItem="rLO-PS-6YO" secondAttribute="centerY" id="nov-bF-zeG"/>
+                                        </constraints>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Frg-rh-ueS">
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="21"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OgQ-HL-mZN">
+                                                <rect key="frame" x="-2" y="3" width="110" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="Translate Source:" id="F52-OC-ha6">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fjf-5k-JMk">
+                                                <rect key="frame" x="112" y="-3" width="239" height="25"/>
+                                                <popUpButtonCell key="cell" type="push" title="Google tanslate(China)" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="ovS-Tz-ApN" id="s99-gp-gVs">
+                                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                    <menu key="menu" id="WIr-y3-I81">
+                                                        <items>
+                                                            <menuItem title="Google tanslate(China)" state="on" image="google" id="ovS-Tz-ApN"/>
+                                                            <menuItem title="Google tanslate(International)" image="google" tag="1" id="eP1-D7-1td"/>
+                                                            <menuItem title="Youdao tranlate" image="youdao" tag="2" id="GRd-Vi-JFq"/>
+                                                            <menuItem title="Tencent translate" image="tencent" tag="3" id="VVr-WQ-RJm"/>
+                                                            <menuItem title="Baidu translate" image="baidu" tag="4" id="Zza-HE-dbJ"/>
+                                                        </items>
+                                                    </menu>
+                                                </popUpButtonCell>
+                                                <connections>
+                                                    <action selector="didChangeTranslateSource:" target="7fW-mR-g9x" id="GIl-QP-mwe"/>
+                                                </connections>
+                                            </popUpButton>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZU8-JP-iVZ" secondAttribute="trailing" constant="20" id="En7-AY-9pl"/>
+                            <constraint firstItem="ZU8-JP-iVZ" firstAttribute="leading" secondItem="f3A-JF-6Nj" secondAttribute="leading" constant="20" id="eTL-4Y-1Tu"/>
+                            <constraint firstItem="ZU8-JP-iVZ" firstAttribute="top" secondItem="f3A-JF-6Nj" secondAttribute="top" constant="20" id="xOF-OQ-X5q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginServerCheckbox" destination="QvD-UK-ly9" id="Yk1-b3-Nsz"/>
+                        <outlet property="shortcut" destination="hAi-xN-4ci" id="5hO-ew-bli"/>
+                        <outlet property="tranlateSource" destination="fjf-5k-JMk" id="RaY-ay-pA5"/>
+                    </connections>
+                </viewController>
+                <customObject id="yvo-iW-Omp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="423"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="90c-Ol-JXe">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="LYe-b4-hTm" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem image="NSPreferencesGeneral" id="5Xx-4f-ExS"/>
+                        <tabViewItem identifier="" image="Icon" id="ZyS-x9-ZeP"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="AdG-4B-5xe">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <outlet property="delegate" destination="LYe-b4-hTm" id="KF4-aL-G8M"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="AdG-4B-5xe" id="ryN-bS-duW"/>
+                        <segue destination="7fW-mR-g9x" kind="relationship" relationship="tabItems" id="xQu-Fo-HP5"/>
+                        <segue destination="8f3-pk-rrF" kind="relationship" relationship="tabItems" id="JuS-6j-Z2h"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="6Bw-35-jYF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="43"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="5xO-yO-0Lb">
+            <objects>
+                <viewController title="About" id="8f3-pk-rrF" customClass="AboutViewController" customModule="TranslateBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="wZe-By-ILt">
+                        <rect key="frame" x="0.0" y="0.0" width="303" height="218"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="15" horizontalStackHuggingPriority="160" verticalStackHuggingPriority="160" horizontalHuggingPriority="160" verticalHuggingPriority="160" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7n9-Kz-o7K">
+                                <rect key="frame" x="20" y="20" width="263" height="178"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="bottom" spacing="12" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="216" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gec-EQ-3kB">
+                                        <rect key="frame" x="0.0" y="155" width="183" height="23"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PDg-NT-wSX">
+                                                <rect key="frame" x="-2" y="0.0" width="110" height="23"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="TranlateBar" id="NxG-gd-9Gx">
+                                                    <font key="font" metaFont="systemSemibold" size="20"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4OD-rI-IV5">
+                                                <rect key="frame" x="116" y="0.0" width="69" height="23"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="Version" id="UXL-3o-52n">
+                                                    <font key="font" metaFont="system" size="20"/>
+                                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WqT-st-Fxx">
+                                        <rect key="frame" x="0.0" y="124" width="245" height="16"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KSk-bt-AYE">
+                                                <rect key="frame" x="-2" y="0.0" width="73" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="💻 GitHub:" id="UVg-uj-fYM">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z5h-0W-dYz" customClass="LinkButton" customModule="TranslateBar" customModuleProvider="target">
+                                                <rect key="frame" x="77" y="0.0" width="168" height="16"/>
+                                                <buttonCell key="cell" type="bevel" title="https://github.com/L1cardo" bezelStyle="regularSquare" alignment="center" inset="2" id="2c4-nz-6Ed">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                                <connections>
+                                                    <action selector="didClickURL:" target="8f3-pk-rrF" id="HdD-gD-WG5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhY-JS-ZM0">
+                                        <rect key="frame" x="0.0" y="93" width="208" height="16"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1LD-F6-rpR">
+                                                <rect key="frame" x="-2" y="0.0" width="97" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="💡 HomePage:" id="7sf-N2-oxH">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="zla-29-Cf3" customClass="LinkButton" customModule="TranslateBar" customModuleProvider="target">
+                                                <rect key="frame" x="101" y="0.0" width="107" height="16"/>
+                                                <buttonCell key="cell" type="bevel" title="https://licardo.cn" bezelStyle="regularSquare" alignment="center" inset="2" id="HLX-qb-okv">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                                <connections>
+                                                    <action selector="didClickURL:" target="8f3-pk-rrF" id="RWN-2m-beL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tl6-Lk-Hnd">
+                                        <rect key="frame" x="0.0" y="62" width="176" height="16"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Sl-4R-MhT">
+                                                <rect key="frame" x="-2" y="0.0" width="73" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="🐦 Twitter:" id="Uez-za-Xmi">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="ajb-wX-mEM" customClass="LinkButton" customModule="TranslateBar" customModuleProvider="target">
+                                                <rect key="frame" x="77" y="0.0" width="99" height="16"/>
+                                                <buttonCell key="cell" type="bevel" title="@AlbertAbdilim" bezelStyle="regularSquare" alignment="center" inset="2" id="eIf-zi-bgs">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                                <connections>
+                                                    <action selector="didClickURL:" target="8f3-pk-rrF" id="tww-QX-kno"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lqc-rf-118">
+                                        <rect key="frame" x="0.0" y="31" width="231" height="16"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wCo-bH-oLI">
+                                                <rect key="frame" x="-2" y="0.0" width="74" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="💸 Donate:" id="8n8-zv-Ncz">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" tag="41" translatesAutoresizingMaskIntoConstraints="NO" id="ZBK-2U-Wel" userLabel="Paypal" customClass="LinkButton" customModule="TranslateBar" customModuleProvider="target">
+                                                <rect key="frame" x="78" y="0.0" width="44" height="16"/>
+                                                <buttonCell key="cell" type="bevel" title="Paypal" bezelStyle="regularSquare" alignment="center" inset="2" id="b6g-0Y-QaN">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                                <connections>
+                                                    <action selector="didClickURL:" target="8f3-pk-rrF" id="oeh-gU-qvG"/>
+                                                </connections>
+                                            </button>
+                                            <button verticalHuggingPriority="750" tag="42" translatesAutoresizingMaskIntoConstraints="NO" id="wuG-dp-fgz" customClass="LinkButton" customModule="TranslateBar" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="0.0" width="41" height="16"/>
+                                                <buttonCell key="cell" type="bevel" title="Alipay" bezelStyle="regularSquare" alignment="center" inset="2" id="PjZ-jI-kgV">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                                <connections>
+                                                    <action selector="didClickURL:" target="8f3-pk-rrF" id="1HG-qV-Y2a"/>
+                                                </connections>
+                                            </button>
+                                            <button verticalHuggingPriority="750" tag="43" translatesAutoresizingMaskIntoConstraints="NO" id="cbX-TW-Fcq" customClass="LinkButton" customModule="TranslateBar" customModuleProvider="target">
+                                                <rect key="frame" x="179" y="0.0" width="52" height="16"/>
+                                                <buttonCell key="cell" type="bevel" title="WeChat" bezelStyle="regularSquare" alignment="center" inset="2" id="zrC-8V-HmO">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                                <connections>
+                                                    <action selector="didClickURL:" target="8f3-pk-rrF" id="Ksh-Gz-ORw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKH-cL-fWF">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="16"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jh7-e4-fvl">
+                                                <rect key="frame" x="-2" y="0.0" width="79" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="✉️ Contact:" id="iT0-Za-qv0">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="99a-Ek-Pdr" customClass="LinkButton" customModule="TranslateBar" customModuleProvider="target">
+                                                <rect key="frame" x="83" y="0.0" width="172" height="16"/>
+                                                <buttonCell key="cell" type="bevel" title="albert.abdilim@foxmail.com" bezelStyle="regularSquare" alignment="center" inset="2" id="mjn-pa-Xrg">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                                <connections>
+                                                    <action selector="didClickURL:" target="8f3-pk-rrF" id="6bp-Wi-ZpH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="7n9-Kz-o7K" firstAttribute="leading" secondItem="wZe-By-ILt" secondAttribute="leading" constant="20" id="CaP-b1-xis"/>
+                            <constraint firstAttribute="trailing" secondItem="7n9-Kz-o7K" secondAttribute="trailing" constant="20" id="aFS-ZR-jWx"/>
+                            <constraint firstItem="7n9-Kz-o7K" firstAttribute="top" secondItem="wZe-By-ILt" secondAttribute="top" constant="20" id="jlg-cR-MCN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="versionLabel" destination="4OD-rI-IV5" id="rMI-7V-CKJ"/>
+                    </connections>
+                </viewController>
+                <customObject id="tt8-sc-CDG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.5" y="477"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="512" height="512"/>
+        <image name="NSPreferencesGeneral" width="32" height="32"/>
+        <image name="baidu" width="16" height="16"/>
+        <image name="google" width="16" height="16"/>
+        <image name="tencent" width="16" height="16"/>
+        <image name="youdao" width="16" height="16"/>
+    </resources>
+</document>

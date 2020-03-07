@@ -1,0 +1,24 @@
+
+/* Class = "NSMenuItem"; title = "Preferences"; ObjectID = "4V3-yM-Jbt"; */
+"4V3-yM-Jbt.title" = "Preferences";
+
+/* Class = "NSMenu"; title = "TrasnlateBar"; ObjectID = "9lI-Bv-3jl"; */
+"9lI-Bv-3jl.title" = "TrasnlateBar";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "TrasnlateBar"; ObjectID = "K0o-Im-PJl"; */
+"K0o-Im-PJl.title" = "TrasnlateBar";
+
+/* Class = "NSMenuItem"; title = "Quit TrasnlateBar"; ObjectID = "K6F-Gw-f9k"; */
+"K6F-Gw-f9k.title" = "Quit TrasnlateBar";
+
+/* Class = "NSMenuItem"; title = "Check for updates"; ObjectID = "QrG-ZX-gzr"; */
+"QrG-ZX-gzr.title" = "Check for updates";
+
+/* Class = "NSMenuItem"; title = "About TrasnlateBar"; ObjectID = "RjL-1F-wXU"; */
+"RjL-1F-wXU.title" = "About TrasnlateBar";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "bf8-8U-Y0m"; */
+"bf8-8U-Y0m.title" = "Quit";

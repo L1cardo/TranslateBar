@@ -1,0 +1,75 @@
+
+/* Class = "NSTextFieldCell"; title = "Shortcut:"; ObjectID = "0Di-yZ-w7R"; */
+"0Di-yZ-w7R.title" = "快捷键:";
+
+/* Class = "NSButtonCell"; title = "https://github.com/L1cardo"; ObjectID = "2c4-nz-6Ed"; */
+"2c4-nz-6Ed.title" = "https://github.com/L1cardo";
+
+/* Class = "NSViewController"; title = "General"; ObjectID = "7fW-mR-g9x"; */
+"7fW-mR-g9x.title" = "通用";
+
+/* Class = "NSTextFieldCell"; title = "💡 HomePage:"; ObjectID = "7sf-N2-oxH"; */
+"7sf-N2-oxH.title" = "💡 主页:";
+
+/* Class = "NSViewController"; title = "About"; ObjectID = "8f3-pk-rrF"; */
+"8f3-pk-rrF.title" = "关于";
+
+/* Class = "NSTextFieldCell"; title = "💸 Donate:"; ObjectID = "8n8-zv-Ncz"; */
+"8n8-zv-Ncz.title" = "💸 捐赠:";
+
+/* Class = "NSTextFieldCell"; title = "Translate Source:"; ObjectID = "F52-OC-ha6"; */
+"F52-OC-ha6.title" = "翻译源:";
+
+/* Class = "NSMenuItem"; title = "Youdao tranlate"; ObjectID = "GRd-Vi-JFq"; */
+"GRd-Vi-JFq.title" = "有道翻译";
+
+/* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "HLX-qb-okv"; */
+"HLX-qb-okv.title" = "https://licardo.cn";
+
+/* Class = "NSTextFieldCell"; title = "TranlateBar"; ObjectID = "NxG-gd-9Gx"; */
+"NxG-gd-9Gx.title" = "TranlateBar";
+
+/* Class = "NSButtonCell"; title = "Alipay"; ObjectID = "PjZ-jI-kgV"; */
+"PjZ-jI-kgV.title" = "支付宝";
+
+/* Class = "NSTextFieldCell"; title = "💻 GitHub:"; ObjectID = "UVg-uj-fYM"; */
+"UVg-uj-fYM.title" = "💻 GitHub:";
+
+/* Class = "NSTextFieldCell"; title = "Version"; ObjectID = "UXL-3o-52n"; */
+"UXL-3o-52n.title" = "版本";
+
+/* Class = "NSTextFieldCell"; title = "🐦 Twitter:"; ObjectID = "Uez-za-Xmi"; */
+"Uez-za-Xmi.title" = "🐦 推特:";
+
+/* Class = "NSMenuItem"; title = "Tencent translate"; ObjectID = "VVr-WQ-RJm"; */
+"VVr-WQ-RJm.title" = "腾讯翻译君";
+
+/* Class = "NSMenuItem"; title = "Baidu translate"; ObjectID = "Zza-HE-dbJ"; */
+"Zza-HE-dbJ.title" = "百度翻译";
+
+/* Class = "NSButtonCell"; title = "Paypal"; ObjectID = "b6g-0Y-QaN"; */
+"b6g-0Y-QaN.title" = "Paypal";
+
+/* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "eGh-Sv-wDE"; */
+"eGh-Sv-wDE.title" = "开机自启动";
+
+/* Class = "NSButtonCell"; title = "@AlbertAbdilim"; ObjectID = "eIf-zi-bgs"; */
+"eIf-zi-bgs.title" = "@AlbertAbdilim";
+
+/* Class = "NSMenuItem"; title = "Google tanslate(International)"; ObjectID = "eP1-D7-1td"; */
+"eP1-D7-1td.title" = "谷歌翻译(国际)";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "eQY-F0-8zZ"; */
+"eQY-F0-8zZ.title" = "偏好设置";
+
+/* Class = "NSTextFieldCell"; title = "✉️ Contact:"; ObjectID = "iT0-Za-qv0"; */
+"iT0-Za-qv0.title" = "✉️ 联系:";
+
+/* Class = "NSButtonCell"; title = "albert.abdilim@foxmail.com"; ObjectID = "mjn-pa-Xrg"; */
+"mjn-pa-Xrg.title" = "albert.abdilim@foxmail.com";
+
+/* Class = "NSMenuItem"; title = "Google tanslate(China)"; ObjectID = "ovS-Tz-ApN"; */
+"ovS-Tz-ApN.title" = "谷歌翻译(中国)";
+
+/* Class = "NSButtonCell"; title = "WeChat"; ObjectID = "zrC-8V-HmO"; */
+"zrC-8V-HmO.title" = "微信";

@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>TranslateBar</title>
+        <item>
+            <title>2.0</title>
+            <pubDate>周日, 08 3月 2020 00:12:17 +0800</pubDate>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="hhttps://github.com/L1cardo/TranslateBar/releases/download/v2.0/TranslateBar.dmg" sparkle:version="2" sparkle:shortVersionString="2.0" length="3463442" type="application/octet-stream" sparkle:edSignature="A1v8zB87C/0M8qcVoYG/KjC10w14XjwjKnKGPnQS/XoQAlsqEpRq6cQT9bpBowje6RKt49L1bSqtwmYtWfg5DA=="/>
+        </item>
+    </channel>
+</rss>

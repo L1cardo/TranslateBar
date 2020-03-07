@@ -1,0 +1,75 @@
+
+/* Class = "NSTextFieldCell"; title = "Shortcut:"; ObjectID = "0Di-yZ-w7R"; */
+"0Di-yZ-w7R.title" = "Shortcut:";
+
+/* Class = "NSButtonCell"; title = "https://github.com/L1cardo"; ObjectID = "2c4-nz-6Ed"; */
+"2c4-nz-6Ed.title" = "https://github.com/L1cardo";
+
+/* Class = "NSViewController"; title = "General"; ObjectID = "7fW-mR-g9x"; */
+"7fW-mR-g9x.title" = "General";
+
+/* Class = "NSTextFieldCell"; title = "💡 HomePage:"; ObjectID = "7sf-N2-oxH"; */
+"7sf-N2-oxH.title" = "💡 HomePage:";
+
+/* Class = "NSViewController"; title = "About"; ObjectID = "8f3-pk-rrF"; */
+"8f3-pk-rrF.title" = "About";
+
+/* Class = "NSTextFieldCell"; title = "💸 Donate:"; ObjectID = "8n8-zv-Ncz"; */
+"8n8-zv-Ncz.title" = "💸 Donate:";
+
+/* Class = "NSTextFieldCell"; title = "Translate Source:"; ObjectID = "F52-OC-ha6"; */
+"F52-OC-ha6.title" = "Translate Source:";
+
+/* Class = "NSMenuItem"; title = "Youdao tranlate"; ObjectID = "GRd-Vi-JFq"; */
+"GRd-Vi-JFq.title" = "Youdao tranlate";
+
+/* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "HLX-qb-okv"; */
+"HLX-qb-okv.title" = "https://licardo.cn";
+
+/* Class = "NSTextFieldCell"; title = "TranlateBar"; ObjectID = "NxG-gd-9Gx"; */
+"NxG-gd-9Gx.title" = "TranlateBar";
+
+/* Class = "NSButtonCell"; title = "Alipay"; ObjectID = "PjZ-jI-kgV"; */
+"PjZ-jI-kgV.title" = "Alipay";
+
+/* Class = "NSTextFieldCell"; title = "💻 GitHub:"; ObjectID = "UVg-uj-fYM"; */
+"UVg-uj-fYM.title" = "💻 GitHub:";
+
+/* Class = "NSTextFieldCell"; title = "Version"; ObjectID = "UXL-3o-52n"; */
+"UXL-3o-52n.title" = "Version";
+
+/* Class = "NSTextFieldCell"; title = "🐦 Twitter:"; ObjectID = "Uez-za-Xmi"; */
+"Uez-za-Xmi.title" = "🐦 Twitter:";
+
+/* Class = "NSMenuItem"; title = "Tencent translate"; ObjectID = "VVr-WQ-RJm"; */
+"VVr-WQ-RJm.title" = "Tencent translate";
+
+/* Class = "NSMenuItem"; title = "Baidu translate"; ObjectID = "Zza-HE-dbJ"; */
+"Zza-HE-dbJ.title" = "Baidu translate";
+
+/* Class = "NSButtonCell"; title = "Paypal"; ObjectID = "b6g-0Y-QaN"; */
+"b6g-0Y-QaN.title" = "Paypal";
+
+/* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "eGh-Sv-wDE"; */
+"eGh-Sv-wDE.title" = "Launch At Login";
+
+/* Class = "NSButtonCell"; title = "@AlbertAbdilim"; ObjectID = "eIf-zi-bgs"; */
+"eIf-zi-bgs.title" = "@AlbertAbdilim";
+
+/* Class = "NSMenuItem"; title = "Google tanslate(International)"; ObjectID = "eP1-D7-1td"; */
+"eP1-D7-1td.title" = "Google tanslate(International)";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "eQY-F0-8zZ"; */
+"eQY-F0-8zZ.title" = "Preferences";
+
+/* Class = "NSTextFieldCell"; title = "✉️ Contact:"; ObjectID = "iT0-Za-qv0"; */
+"iT0-Za-qv0.title" = "✉️ Contact:";
+
+/* Class = "NSButtonCell"; title = "albert.abdilim@foxmail.com"; ObjectID = "mjn-pa-Xrg"; */
+"mjn-pa-Xrg.title" = "albert.abdilim@foxmail.com";
+
+/* Class = "NSMenuItem"; title = "Google tanslate(China)"; ObjectID = "ovS-Tz-ApN"; */
+"ovS-Tz-ApN.title" = "Google tanslate(China)";
+
+/* Class = "NSButtonCell"; title = "WeChat"; ObjectID = "zrC-8V-HmO"; */
+"zrC-8V-HmO.title" = "WeChat";

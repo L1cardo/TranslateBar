@@ -8,6 +8,7 @@
 
 import Cocoa
 import MASShortcut
+import Defaults
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -32,7 +33,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         setUpStatusBarMenu()
         
-        MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: "TranslateBarShortcut", toAction: Popover.show)
+        MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: "TranslateBarShortcut", toAction: Popover.toggle)
+        
+        Defaults[.TranslateSourceChanged] = true
 
     }
     
@@ -78,10 +81,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func didClickMenuItem(_ sender: NSMenuItem) {
         switch sender.tag {
         case 0:
-            let preferencesWindowController = self.preferencesWindowController
-            preferencesWindowController.showWindow(sender)
+            let preferencesWindowController = (NSApplication.shared.delegate as? AppDelegate)?.preferencesWindowController
+            preferencesWindowController?.showWindow(sender)
+            // 将应用界面浮到最上层
             NSApp.activate(ignoringOtherApps: true)
-            preferencesWindowController.window?.makeKeyAndOrderFront(preferencesWindowController)
+            preferencesWindowController?.window?.makeKeyAndOrderFront(preferencesWindowController)
         case 1:
             NSApplication.shared.terminate(self)
         default:

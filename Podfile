@@ -6,6 +6,8 @@ target 'TranslateBar' do
   use_frameworks!
 
   pod 'MASShortcut'
+  pod 'Defaults'
+  pod 'Sparkle'
   pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
 
   # Pods for TranslateBar

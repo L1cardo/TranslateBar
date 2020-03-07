@@ -8,12 +8,12 @@
 
 import Cocoa
 import WebKit
+import Defaults
 
 class TranslateViewController: NSViewController {
     
     @IBOutlet var translateView: WKWebView!
-    
-    var urlLoaded = false
+    var url: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +24,26 @@ class TranslateViewController: NSViewController {
     override func viewWillAppear() {
         super.viewWillAppear()
         
-        if (!urlLoaded) {
-            urlLoaded = true
-            let url = URL(string: "https://translate.google.cn/")
+        if Defaults[.TranslateSourceChanged] == true {
+            Defaults[.TranslateSourceChanged] = false
+            
+            switch Defaults[.translateSource] {
+            case 0:
+                url = URL(string: "https://translate.google.cn/")
+            case 1:
+                url = URL(string: "https://translate.google.com/")
+            case 2:
+                url = URL(string: "http://fanyi.youdao.com/")
+            case 3:
+                url = URL(string: "https://fanyi.qq.com")
+            case 4:
+                url = URL(string: "https://fanyi.baidu.com")
+            default:
+                return
+            }
+            
             let urlRequest = URLRequest(url: url!)
             translateView.load(urlRequest)
         }
     }
-    
 }

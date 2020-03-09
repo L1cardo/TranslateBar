@@ -4,9 +4,9 @@
         <title>TranslateBar</title>
         <item>
             <title>2.0</title>
-            <pubDate>周日, 08 3月 2020 00:12:17 +0800</pubDate>
+            <pubDate>周二, 10 3月 2020 00:08:47 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <enclosure url="hhttps://github.com/L1cardo/TranslateBar/releases/download/v2.0/TranslateBar.dmg" sparkle:version="2" sparkle:shortVersionString="2.0" length="3463442" type="application/octet-stream" sparkle:edSignature="A1v8zB87C/0M8qcVoYG/KjC10w14XjwjKnKGPnQS/XoQAlsqEpRq6cQT9bpBowje6RKt49L1bSqtwmYtWfg5DA=="/>
+            <enclosure url="https://github.com/L1cardo/TranslateBar/releases/download/v2.0.1/TranslateBar.dmg" sparkle:version="3" sparkle:shortVersionString="2.0.1" length="3464865" type="application/octet-stream" sparkle:edSignature="RZzQh+rDIBm1oD1XQIjP++ebVYXtVzKA52ybThSY6l408KvIHoIzXjFERMTblGtW1FYFRuTuWFKQToY69E19Cg=="/>
         </item>
     </channel>
 </rss>

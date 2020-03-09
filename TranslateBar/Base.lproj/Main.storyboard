@@ -31,6 +31,62 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="File" id="Zph-Qb-v4d">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="File" id="6L5-W5-60N">
+                                    <items>
+                                        <menuItem title="Close" keyEquivalent="w" id="BeX-FO-39e">
+                                            <connections>
+                                                <action selector="performClose:" target="Ady-hI-5gd" id="7Ab-hw-gH9"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Edit" id="DoD-ay-f3A">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Edit" id="jwx-5B-mTR">
+                                    <items>
+                                        <menuItem title="Undo" keyEquivalent="z" id="s05-vr-Fub">
+                                            <connections>
+                                                <action selector="undo:" target="Ady-hI-5gd" id="UzJ-W0-SGx"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Redo" keyEquivalent="Z" id="EiK-Nx-SDL">
+                                            <connections>
+                                                <action selector="redo:" target="Ady-hI-5gd" id="Il7-4h-J9b"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="OWH-XF-qlZ"/>
+                                        <menuItem title="Cut" keyEquivalent="x" id="NrK-y2-GGq">
+                                            <connections>
+                                                <action selector="cut:" target="Ady-hI-5gd" id="ZIX-jc-FJv"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Copy" keyEquivalent="c" id="INo-ly-MUk">
+                                            <connections>
+                                                <action selector="copy:" target="Ady-hI-5gd" id="YYF-Tq-aVE"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste" keyEquivalent="v" id="RsS-zR-FkX">
+                                            <connections>
+                                                <action selector="paste:" target="Ady-hI-5gd" id="zaQ-ZQ-X75"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Delete" id="5ai-lQ-lVr">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="delete:" target="Ady-hI-5gd" id="FrN-De-NNd"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Select All" keyEquivalent="a" id="QyM-2M-cxM">
+                                            <connections>
+                                                <action selector="selectAll:" target="Ady-hI-5gd" id="1me-jb-qI3"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                         </items>
                     </menu>
                     <connections>

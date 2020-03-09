@@ -44,7 +44,7 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>https://github.com/L1cardo/TranslateBart/raw/master/appcast.xml</string>
+	<string>https://github.com/L1cardo/TranslateBar/raw/master/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>w9/p1nbbkDjO3Ut5bGhkvGf1DPG6tLARalM9M8BSnqA=</string>
 </dict>

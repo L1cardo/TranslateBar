@@ -4,16 +4,14 @@
         <title>TranslateBar</title>
         <item>
             <title>2.1.0</title>
-            <description>
-			<![CDATA[
+            <description><![CDATA[
 			<ul><li>add DeepL Translator.</li></ul>
             <hr/>
             <ul><li>添加 DeepL 翻译器.</li></ul>
-			]]>
-			</description>
+			]]></description>
             <pubDate>周六, 25 4月 2020 12:31:00 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/L1cardo/TranslateBar/releases/download/v2.1.0/TranslateBar.dmg" sparkle:version="4" sparkle:shortVersionString="2.1.0" length="3506433" type="application/octet-stream" sparkle:edSignature="cgsjlF4JUGcjcFAaR4ghB1kkaNwjr7OyFkZ1HO1QPDrmqNQmw6cz1w5ze052r/JIFDuBR0kAeyH78nIkdb6iAg=="/>
+            <enclosure url="https://github.com/L1cardo/TranslateBar/releases/download/v2.1.0/TranslateBar.dmg" sparkle:version="4" sparkle:shortVersionString="2.1.0" length="3506433" type="application/octet-stream" sparkle:edSignature="QDJbD3fmA0Jz8FuuEaDPwSHeOYbSLxmb1SVaHrIawkOLmkSbkse6/uqSg/z5OADwcnrgfvF4nH818bVKTOoZBA=="/>
         </item>
     </channel>
 </rss>

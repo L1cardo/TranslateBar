@@ -26,7 +26,6 @@
 		224760B0BAC8CEAB6F118DDC /* Pods-TranslateBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateBar.release.xcconfig"; path = "Target Support Files/Pods-TranslateBar/Pods-TranslateBar.release.xcconfig"; sourceTree = "<group>"; };
 		421D4D8EB361A2C9AEF2E25C /* Pods-TranslateBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateBar.debug.xcconfig"; path = "Target Support Files/Pods-TranslateBar/Pods-TranslateBar.debug.xcconfig"; sourceTree = "<group>"; };
 		961C2CE42413EE1A009311B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
-		961C2CE92413EE22009311B2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Preferences.strings"; sourceTree = "<group>"; };
 		961C2CED2413EE67009311B2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		9628A83523AE057100BF24FE /* TranslateBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9628A83823AE057100BF24FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		9628A85223AE146E00BF24FE /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		9628A86C23AE1C1900BF24FE /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		966510CC2453F4250048D097 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preferences.strings; sourceTree = "<group>"; };
+		9679EF2F2453F98A009E8B03 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Preferences.strings"; sourceTree = "<group>"; };
 		96A4439223AE3B2D00B7F2BC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		96AA76082413FB64005A97A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		96CBDD322413F4CF0059E425 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
@@ -274,8 +274,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				961C2CE42413EE1A009311B2 /* Base */,
-				961C2CE92413EE22009311B2 /* zh-Hans */,
 				966510CC2453F4250048D097 /* en */,
+				9679EF2F2453F98A009E8B03 /* zh-Hans */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";

@@ -54,6 +54,8 @@ class GeneralViewController: PreferencesViewController {
             tranlateSource.selectItem(withTag: 3)
         case 4:
             tranlateSource.selectItem(withTag: 4)
+        case 5:
+            tranlateSource.selectItem(withTag: 5)
         default:
             return
         }
@@ -72,22 +74,20 @@ class GeneralViewController: PreferencesViewController {
     
     @IBAction func didChangeTranslateSource(_ sender: NSPopUpButton) {
         Popover.close()
+        Defaults[.TranslateSourceChanged] = true
         switch sender.indexOfSelectedItem {
         case 0:
             Defaults[.translateSource] = 0
-            Defaults[.TranslateSourceChanged] = true
         case 1:
             Defaults[.translateSource] = 1
-            Defaults[.TranslateSourceChanged] = true
         case 2:
             Defaults[.translateSource] = 2
-            Defaults[.TranslateSourceChanged] = true
         case 3:
             Defaults[.translateSource] = 3
-            Defaults[.TranslateSourceChanged] = true
         case 4:
             Defaults[.translateSource] = 4
-            Defaults[.TranslateSourceChanged] = true
+        case 5:
+            Defaults[.translateSource] = 5
         default:
             return
         }

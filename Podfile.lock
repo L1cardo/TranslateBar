@@ -1,6 +1,6 @@
 PODS:
-  - Defaults (3.1.1)
-  - LoginServiceKit (2.1.0)
+  - Defaults (4.0.0)
+  - LoginServiceKit (2.2.0)
   - MASShortcut (2.4.0)
   - Sparkle (1.23.0)
 
@@ -22,15 +22,15 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   LoginServiceKit:
-    :commit: be0b910d825f826d3c64d6ff1207209ec7dea0fa
+    :commit: d8c24ad7e9b48294a8ae47f94bb1debeba74e102
     :git: https://github.com/Clipy/LoginServiceKit.git
 
 SPEC CHECKSUMS:
-  Defaults: bcfbdb87d0b63fb302d70791b72f62f0f29d26aa
-  LoginServiceKit: 9a8b258c3111fa0d9585615052f778b08be92302
+  Defaults: bd35cdccb03e81e8ec158dea6518b94c321de403
+  LoginServiceKit: 3c86ce2f2bcd1e373326839d6d863d8a6a5915b4
   MASShortcut: d9e4909e878661cc42877cc9d6efbe638273ab57
   Sparkle: 55b1a87ba69d56913375a281546b7c82dec95bb0
 
 PODFILE CHECKSUM: b2d02731dce96b367da40914c1c98464dcdaa846
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.1

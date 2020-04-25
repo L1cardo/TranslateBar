@@ -38,6 +38,8 @@ class TranslateViewController: NSViewController {
                 url = URL(string: "https://fanyi.qq.com")
             case 4:
                 url = URL(string: "https://fanyi.baidu.com")
+            case 5:
+                url = URL(string: "https://www.deepl.com/")
             default:
                 return
             }

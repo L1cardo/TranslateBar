@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="pWw-1M-ft8">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="pWw-1M-ft8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -102,6 +102,7 @@
                                                             <menuItem title="Youdao tranlate" image="youdao" tag="2" id="GRd-Vi-JFq"/>
                                                             <menuItem title="Tencent translate" image="tencent" tag="3" id="VVr-WQ-RJm"/>
                                                             <menuItem title="Baidu translate" image="baidu" tag="4" id="Zza-HE-dbJ"/>
+                                                            <menuItem title="DeepL translator" image="deepl" tag="5" id="Jqk-4F-wJa"/>
                                                         </items>
                                                     </menu>
                                                 </popUpButtonCell>
@@ -438,6 +439,7 @@
         <image name="Icon" width="512" height="512"/>
         <image name="NSPreferencesGeneral" width="32" height="32"/>
         <image name="baidu" width="16" height="16"/>
+        <image name="deepl" width="16" height="16"/>
         <image name="google" width="16" height="16"/>
         <image name="tencent" width="16" height="16"/>
         <image name="youdao" width="16" height="16"/>

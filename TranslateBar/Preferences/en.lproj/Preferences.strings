@@ -26,6 +26,9 @@
 /* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "HLX-qb-okv"; */
 "HLX-qb-okv.title" = "https://licardo.cn";
 
+/* Class = "NSMenuItem"; title = "DeepL translator"; ObjectID = "Jqk-4F-wJa"; */
+"Jqk-4F-wJa.title" = "DeepL translator";
+
 /* Class = "NSTextFieldCell"; title = "TranlateBar"; ObjectID = "NxG-gd-9Gx"; */
 "NxG-gd-9Gx.title" = "TranlateBar";
 

@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     let popover = NSPopover()
     var eventMonitor: EventMonitor?
-    lazy var preferencesWindowController: PreferencesWindowController = {
+    var preferencesWindowController: PreferencesWindowController = {
         let storyboard = NSStoryboard(name: "Preferences", bundle: nil)
         return storyboard.instantiateInitialController() as! PreferencesWindowController
     }()
